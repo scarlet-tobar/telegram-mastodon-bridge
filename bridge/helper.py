@@ -13,14 +13,7 @@ class Footer():
 
 
     def __make_text(self, final_text: str, message: telebot.types.Message, character_limit: int) -> List[str]:
-        if message.chat.username:
-            final_text += self.__posted_in(message.chat.username)
-        else:
-            final_text += self.__posted_in(message.chat.title)
-
-        if message.forward_from_chat:
-            final_text += self.__forwarded_from(message.forward_from_chat.title)
-
+        
         if len(final_text) <= character_limit:
             return [final_text]
         else:
