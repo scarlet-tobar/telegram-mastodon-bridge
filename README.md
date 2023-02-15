@@ -23,6 +23,11 @@ Telegram/Mastodon bot for forwarding messages.
 - Run the bot: `docker-compose up --build -d`
 - Bot will start forwarding posts
 
+
+## Modifications
+
+There's no footer message.
+
 ### Limitations
 
 - Only reposts plain text(mastodon limitation), images, and videos
